@@ -158,14 +158,15 @@ p {
 }
 
 .complete--order-cta {
+  display: block;
   color: white;
   font-size: 1.6rem;
   background-color: #16DB99;
+  width: 100%;
   text-align: center;
   font-weight: bold;
   padding: 1.125em 0;
   margin: 0 auto;
-  width: 90%;
   border-radius: 0.12em ;
 }
 
@@ -216,7 +217,7 @@ p {
   margin-bottom: 3em;
   padding-top: 1em;
   padding-bottom: 1em;
-  /* position: absolute; */
+  position: relative;
   width: 90%;
   margin: 0 auto;
 }
@@ -225,6 +226,24 @@ p {
   text-align: center;
   background-color: white;
   
+}
+
+.appreciation--post {
+  position: absolute;
+  display: flex;
+  background-color: #16DB99;
+  height: 50vh;
+  width: 100%;
+  top: 0;
+  display: none;
+}
+
+.appreciation--post h1 {
+  margin: auto;
+  color: #083b2a;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
 }
 
 @media (min-width:500px) {
