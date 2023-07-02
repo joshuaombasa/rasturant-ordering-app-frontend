@@ -10,7 +10,7 @@ export default function CartItem({item}) {
                 <h3 className="food--name">{item.name}</h3>
                 <p className="food--price">$:{item.price}</p>
             </div>
-            <p className="remove" onClick={() => removeItemFromCart(item.id)}>Remove</p>
+            <p className="remove--item--from--cart--cta" onClick={() => removeItemFromCart(item.id)}>Remove</p>
         </div>
     )
 }
