@@ -25,6 +25,10 @@ export default function MenucontextProvider(props) {
         })
     }
 
+    function clearCart() {
+      localStorage.clear();
+    }
+
     React.useEffect(() => {
         let totalCost = 0;
         for (let i = 0; i < itemsInCart.length; i++) {
@@ -64,7 +68,8 @@ export default function MenucontextProvider(props) {
                     itemsInCart: itemsInCart,
                     addItemToCart: addItemToCart,
                     removeItemFromCart: removeItemFromCart,
-                    costOfItemsInCart: costOfItemsInCart
+                    costOfItemsInCart: costOfItemsInCart,
+                    clearCart: clearCart
                   }
                 }
       >
