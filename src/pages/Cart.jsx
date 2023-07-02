@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import { Menucontext } from "../Menucontext";
 import CartItem from "../components/CartItem";
 import CartTotal from "../components/CartTotal";
-
+import CartChart from "../components/CartChart";
 export default function Cart() {
 
     const { itemsInCart } = useContext(Menucontext)
@@ -21,6 +21,7 @@ export default function Cart() {
             </h1>
             <div>{itemsInCart && cartItemsJsx}</div>
            {itemsInCart.length  > 0 &&  <CartTotal/>}
+           <CartChart/>
         </div>
     )
 }
